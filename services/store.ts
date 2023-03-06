@@ -1,8 +1,11 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
+import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import journeyReducer from '@/features/journey/journeySlice';
 
 export function makeStore() {
   return configureStore({
-    reducer: {},
+    reducer: {
+      journey: journeyReducer
+    },
   })
 }
 
