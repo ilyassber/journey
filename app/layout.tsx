@@ -1,6 +1,6 @@
 import './globals.css';
 
-import ReduxProvider from '@/providers/ReduxProvider';
+import ReduxProvider from '@/src/providers/ReduxProvider';
 
 
 export const metadata = {
