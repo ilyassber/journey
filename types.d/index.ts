@@ -1,5 +1,11 @@
+export type Category = {
+    id: number;
+    name: string,
+};
+
 export type Journey = {
     id: number;
+    categoryId: number;
     name: string,
 };
 
@@ -11,6 +17,7 @@ export type Paragraph = {
 
 export type Article = {
     id: number;
+    categoryId: number;
     title: string;
     url: string;
     thumbnailUrl: string;
