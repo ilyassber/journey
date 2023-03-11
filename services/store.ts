@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import journeyReducer from '@/features/journey/journeySlice';
+import categorySlice from '@/features/category/categorySlice';
 
 export function makeStore() {
   return configureStore({
     reducer: {
+      categorySlice: categorySlice,
       journey: journeyReducer
     },
   })
